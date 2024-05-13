@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "fa2a686eaf76bf49",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa3afa4e0663d71b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7cbe9e4f8b125a57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/tagger/groups.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5ddddb4ebb898eaf",
+    "type": "split",
+    "children": [
+      {
+        "id": "af5562e7f0279e36",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8413ac9726a14276",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0e5496741b920c7c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ee3fb0e09164b34d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2e6e248aab7a478f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5fc49356552a24c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7bb6c1cd4296134",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/tagger/groups.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "349189a79990dd22",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/tagger/groups.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "13fd8960a5e7f083",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3f09b83792d95b4a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/tagger/groups.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7cbe9e4f8b125a57",
+  "lastOpenFiles": [
+    "docs/tagger/how it works.md",
+    "docs/tagger/getting started.md",
+    "docs/tagger/groups.md",
+    "docs/tagger/intro.md",
+    "docs/preferences/intro.md",
+    "docs/tagger/scripting.md",
+    "docs/preferences/scripting.md",
+    "docs/preferences/faq.md",
+    "docs/preferences/examples.md",
+    "docs/preferences/editor.md",
+    "docs/tagger/id attribute.md",
+    "docs/tagger/filter.md",
+    "static/img/tagger/img1.png",
+    "static/img/tagger",
+    "docs/preferences/getting started.md"
+  ]
+}

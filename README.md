@@ -1,2 +1,3 @@
-# documentation
-This is the complete documentation of all Assets Development by Final Factory.
+# Final Factory Documentation
+
+This repository contains the complete documentation of all Assets development by Final Factory.
