@@ -3,7 +3,9 @@ sidebar_position: 1
 sidebar_label: Intro
 ---
 
-# Introduction
+# Final Tagger Documentation
+
+![Final Factory Logo](https://static.wixstatic.com/media/880a29_adf69d1f5217420c946012af55973e12~mv2.png)  ![Final Tagger Logo](https://static.wixstatic.com/media/880a29_83b4df11c0b14b8db97a8bd72ef58ebe~mv2.png)
 
 Thank you for choosing Tagger!
 

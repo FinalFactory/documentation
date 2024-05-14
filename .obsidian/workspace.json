@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/tagger/groups.md",
+                "file": "docs/tagger/intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/tagger/groups.md",
+                "file": "docs/tagger/intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/tagger/groups.md",
+                "file": "docs/tagger/intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/tagger/groups.md"
+                "file": "docs/tagger/intro.md"
               }
             }
           }
@@ -148,17 +148,22 @@
   },
   "active": "7cbe9e4f8b125a57",
   "lastOpenFiles": [
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/types.d.ts",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/utils.d.ts",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/server.d.ts",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/Provider.d.ts",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/Dispatcher.d.ts",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/index.d.ts",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/index.esm.js",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/index.js",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/HelmetData.d.ts",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/constants.d.ts",
-    "node_modules/@docusaurus/module-type-aliases/node_modules/react-helmet-async/lib/client.d.ts",
+    "static/img/tagger/TaggerLogo.png",
+    "docs/tagger/getting started.md",
+    "docs/tagger/groups.md",
+    "static/img/tagger/Tagger Logo.png",
+    "static/img/tagger/Tags Logo.png",
+    "node_modules/cosmiconfig/node_modules",
+    "node_modules/core-js-compat/node_modules",
+    "node_modules/@docusaurus/utils-validation/node_modules",
+    "node_modules/webpackbar/node_modules",
+    "node_modules/react-loadable-ssr-addon-v5-slorber/node_modules",
+    "node_modules/webpack-merge/node_modules",
+    "node_modules/browserslist/node_modules",
+    "node_modules/postcss/node_modules",
+    "node_modules/autoprefixer/node_modules",
+    "node_modules/@docusaurus/utils/node_modules",
+    "node_modules/css-loader/node_modules/semver/README.md",
     "build/img/tagger/img1.png",
     "node_modules/detect-port/node_modules/ms/readme.md",
     "node_modules/detect-port/node_modules/debug/README.md",
@@ -182,9 +187,6 @@
     "node_modules/schema-utils/node_modules/ajv-formats/README.md",
     "node_modules/schema-utils/node_modules/ajv/README.md",
     "node_modules/schema-utils/node_modules/ajv-keywords/README.md",
-    "node_modules/react-router/node_modules/path-to-regexp/Readme.md",
-    "node_modules/react-router/node_modules/path-to-regexp/History.md",
-    "node_modules/micromark/node_modules/debug/README.md",
     "static/img/tagger/img1.png"
   ]
 }

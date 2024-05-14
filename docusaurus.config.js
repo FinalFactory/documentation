@@ -71,15 +71,11 @@ const config = {
         items: [
           {to: '/', label: 'Home', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Final Tagger',
             to: '/docs/tagger/intro',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Final Preferences',
             to: '/docs/preferences/intro',
