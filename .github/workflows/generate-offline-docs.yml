@@ -1,0 +1,48 @@
+name: Generate Offline Documentation
+
+on:
+  workflow_run:
+    workflows: ["Deploy static content to Pages"]
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: docusaurus-build
+          path: build/
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Convert Docusaurus site to single markdown file
+        run: |
+          npx docusaurus-to-markdown
+
+      - name: Upload markdown artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: offline-docs
+          path: build/markdown/
+
+      - name: Generate PDF from markdown (optional)
+        run: |
+          npx markdown-pdf build/markdown/**/*.md
+
+      - name: Upload PDF artifact (optional)
+        uses: actions/upload-artifact@v2
+        with:
+          name: offline-docs-pdf
+          path: build/markdown/**/*.pdf
