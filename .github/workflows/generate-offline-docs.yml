@@ -24,7 +24,7 @@ jobs:
             yes "" | sudo ./install.sh
   
         - name: Build PDF
-          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/preferences/intro
+          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/preferences/intro --output FinalPreferences.pdf
   
         - name: Upload results
           uses: actions/upload-artifact@v3
