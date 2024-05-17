@@ -6,23 +6,29 @@ on:
     types:
       - completed
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Download build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: docusaurus-build
           path: build/
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
@@ -32,7 +38,7 @@ jobs:
           npx docusaurus-to-markdown
 
       - name: Upload markdown artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: offline-docs
           path: build/markdown/
@@ -42,7 +48,7 @@ jobs:
           npx markdown-pdf build/markdown/**/*.md
 
       - name: Upload PDF artifact (optional)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: offline-docs-pdf
           path: build/markdown/**/*.pdf
