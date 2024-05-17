@@ -16,49 +16,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Download build artifact
-        uses: dawidd6/action-download-artifact@v3
-        with:
-          workflow: jekyll-gh-pages.yml
-          workflow_conclusion: success
-          name: docusaurus-build
-          path: build/
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Install Pandoc
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc
-
-      - name: Convert HTML to Markdown
-        run: |
-          mkdir -p build/markdown
-          for file in build/**/*.html; do
-              pandoc "$file" -f html -t markdown -o "build/markdown/$(basename "$file" .html).md"
-          done
-
-      - name: Upload markdown artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: offline-docs
-          path: build/markdown/
-
-      - name: Generate PDF from markdown (optional)
-        run: |
-          npx markdown-pdf build/markdown/**/*.md
-
-      - name: Upload PDF artifact (optional)
-        uses: actions/upload-artifact@v2
-        with:
-          name: offline-docs-pdf
-          path: build/markdown/**/*.pdf
+        - name: Install Prince
+          run: |
+            curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+            tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+            cd prince-14.2-linux-generic-x86_64
+            yes "" | sudo ./install.sh
+  
+        - name: Build PDF
+          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/preferences/intro
+  
+        - name: Upload results
+          uses: actions/upload-artifact@v3
+          with:
+            name: result
+            # The output filename can be specified with --output option
+            path: pdf/FinalPreferences.pdf
+            if-no-files-found: error
