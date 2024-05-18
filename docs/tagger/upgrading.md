@@ -1,4 +1,4 @@
-# Upgrading from <=1.7 to >2.0
+# Upgrading from <2.0 to >2.0
 
 With the release of version 2.0, Tagger has undergone significant changes to improve its structure and integration. This includes namespace changes and script renaming to better distinguish Tagger scripts from other scripts in your project, especially due to the migration of Tagger to Final Factory. Below are the key changes you need to be aware of when upgrading from version 1.7 or earlier to version 2.0 or later.
 
