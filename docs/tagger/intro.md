@@ -7,7 +7,7 @@ sidebar_label: Intro
 
 ![Final Factory Logo](https://static.wixstatic.com/media/880a29_adf69d1f5217420c946012af55973e12~mv2.png)  ![Final Tagger Logo](https://static.wixstatic.com/media/880a29_83b4df11c0b14b8db97a8bd72ef58ebe~mv2.png)
 
-Thank you for choosing Tagger!
+Thank you for choosing [Final Tagger](https://finalfactory.de/unity-asset-tagger)!
 
 Like you, I realized the need for something more robust than the standard single-tag system in Unity. Tagger was born from the desire to assign multiple tags to a GameObject and to perform searches on these tags efficiently and effectively.
 
@@ -50,8 +50,8 @@ These settings and tools are designed to provide maximum flexibility and efficie
 
 If you need help or have any questions, please contact our support at:
 
-- GitHub: [Final Preferences Issues](https://github.com/FinalFactory/FinalPreferences/issues)
-- Forum: [Discussions](https://github.com/FinalFactory/FinalPreferences/discussions)
+- GitHub: [Issues](https://github.com/FinalFactory/FinalTagger/issues)
+- Forum: [Discussions](https://github.com/FinalFactory/FinalTagger/discussions)
 - Further [Support](./../support)
 
 ## License

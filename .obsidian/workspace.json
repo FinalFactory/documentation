@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/tagger/intro.md",
+                "file": "docs/tagger/getting started.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/tagger/intro.md",
+                "file": "docs/tagger/getting started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/tagger/intro.md",
+                "file": "docs/tagger/getting started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/tagger/intro.md"
+                "file": "docs/tagger/getting started.md"
               }
             }
           }
@@ -148,9 +148,21 @@
   },
   "active": "7cbe9e4f8b125a57",
   "lastOpenFiles": [
+    "static/img/tagger/img1.png",
+    "docs/tagger/upgrading.md",
+    "static/img/tagger/Singleton.png",
     "static/img/tagger/TaggerLogo.png",
+    "docs/tagger/intro.md",
     "docs/tagger/getting started.md",
     "docs/tagger/groups.md",
+    "docs/tagger/how it works.md",
+    "docs/tagger/changelog.md",
+    "src/pages/markdown-page.md",
+    "docs/preferences/intro.md",
+    "docs/preferences/getting started.md",
+    "docs/preferences/scripting.md",
+    "docs/intro.md",
+    "docs/tagger/scripting.md",
     "static/img/tagger/Tagger Logo.png",
     "static/img/tagger/Tags Logo.png",
     "node_modules/cosmiconfig/node_modules",
@@ -176,17 +188,6 @@
     "node_modules/css-minimizer-webpack-plugin/node_modules/jest-worker/README.md",
     "node_modules/spdy/node_modules/debug/README.md",
     "node_modules/spdy-transport/node_modules/ms/readme.md",
-    "node_modules/spdy-transport/node_modules/ms/license.md",
-    "node_modules/serve-handler/node_modules/mime-types/README.md",
-    "node_modules/serve-handler/node_modules/mime-types/HISTORY.md",
-    "node_modules/serve-handler/node_modules/range-parser/README.md",
-    "node_modules/serve-handler/node_modules/range-parser/HISTORY.md",
-    "node_modules/serve-handler/node_modules/mime-db/README.md",
-    "node_modules/serve-handler/node_modules/mime-db/HISTORY.md",
-    "node_modules/schema-utils/node_modules/json-schema-traverse/README.md",
-    "node_modules/schema-utils/node_modules/ajv-formats/README.md",
-    "node_modules/schema-utils/node_modules/ajv/README.md",
-    "node_modules/schema-utils/node_modules/ajv-keywords/README.md",
-    "static/img/tagger/img1.png"
+    "node_modules/spdy-transport/node_modules/ms/license.md"
   ]
 }

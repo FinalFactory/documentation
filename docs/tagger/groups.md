@@ -6,13 +6,16 @@ sidebar_position: 5
 
 ## Context Menu
 
-To efficiently manage your tags and groups within Tagger, use the context menu by right-clicking on any tag or group in your Unity editor. This context menu offers several options:
+To efficiently manage your tags and groups within Tagger, use the context menu by right-clicking on any tag or group in your Unity editor. 
 
-- **Move Tag**: Reassign a tag to a different group.
-- **Change Color of the Tag**: Customize the color of individual tags for better visibility or organization.
-- **Delete Tag**: Remove a tag completely. Note that deleting a tag will remove it from all associated Prefabs and Scene objects permanently.
-- **Rename Tags/Groups**: Update the name of a tag or a group to better reflect its usage or content.
+### Singleton 
 
+Configure a group as a singleton means that you can only add one tag of this group to an GameObject. All other tags of this group will be removed.
+
+:::note
+The singleton rule will only be on add/set tags of a singleton group enforced.
+Changing this setting does not automatically check all GameObjects.
+:::
 ### Changing the Color of the Tag
 
 Adjusting the color of tags can be done easily through the context menu or programmatically via scripts. This allows for visual differentiation of tags directly within the Unity editor.

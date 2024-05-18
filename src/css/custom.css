@@ -32,3 +32,11 @@
   --ifm-font-color-base: #FFFFFF;
   --ifm-font-color-secondary: #CCCCCC; 
 }
+
+/* This works around the issue of truncated code-blocks in https://github.com/signcl/docusaurus-prince-pdf/ */
+@media print {
+  code[class*='codeBlockLines'] {
+    float: none;
+    display: block;
+  }
+}

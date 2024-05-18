@@ -152,7 +152,7 @@ Every class and method is thoroughly documented using XML Documentation to ensur
 
 If you need help or have any questions, please contact our support at:
 
-- GitHub: [Final Preferences Issues](https://github.com/FinalFactory/FinalPreferences/issues)
+- GitHub: [Issues](https://github.com/FinalFactory/FinalPreferences/issues)
 - Forum: [Discussions](https://github.com/FinalFactory/FinalPreferences/discussions)
 - Further [Support](./../support)
 
