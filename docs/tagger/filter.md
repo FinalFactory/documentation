@@ -1,3 +1,8 @@
+---
+sidebar_position: 19
+sidebar_label: Filtering
+---
+
 # TaggerFilter Class
 
 The `TaggerFilter` class and `TaggerIdAttribute` are essential components of the Tagger system, providing powerful functionalities for filtering and identifying GameObjects based on tags. These tools enhance how developers can manage and interact with tags within the Unity environment, both through code and the Unity Inspector.

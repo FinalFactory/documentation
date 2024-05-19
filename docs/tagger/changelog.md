@@ -1,18 +1,39 @@
+---
+sidebar_position: 100
+sidebar_label: Changelog
+---
+
 # Changelog
 
-# 2.0
+## 2.0
 
-::: warning
-WARNING - Folder structure changed - The Tagger Plugin is now converted to unity's new Package format.
+### Changed
+
+:::warning
+Folder structure changed - The Tagger Plugin is now converted to unity's new Package format.
 ::: 
-::: warning
-WARNING - Namespace changed - The Tagger Plugin is now migrated to Final Factory.
+
+:::warning
+Namespace changed - The Tagger Plugin is now migrated to Final Factory.
 ::: 
 
 - Complete Overhoal of the UI
+- Method for adding multiple tags renamed from AddTag to AddTags
+- Method for setting multiple tags renamed from SetTag to SetTags
+- Renamed FindGameObjectWithTag to FindGameObjectWithExactOneTag
+- Renamed FindGameObjectsWithTag to FindGameObjectsWithExactOneTag
+- Adding a non existing tag to a group will now automatically create it in the system
+
+### Added
+
 - Enter now completes renaming a Tag
+- Groups can now configured as [Singleton](/docs/tagger/groups#singleton)
+- AddTag will now also accept the TaggerGroup class
+- AddTag returns now a boolean that indicates if the tag was added to the system.
+- FindGameObjectsWithTag with Search mode to search for single tags.
+## Fixed
 
-
+- Rare bug where the intenral array of TagArray has the wrong size after deserialization causing index out of range exception
 ## 1.7.1
 
 - Due to a bug caused by the Custom GameObject Inspector, I currently had to remove the Custom GameObject Inspector. Please just add the tagger script as a component as usual to every GameObject you need it and use the Component Inspector instead!    
@@ -68,8 +89,8 @@ WARNING - Namespace changed - The Tagger Plugin is now migrated to Final Factory
   
 
 ## 1.3
-::: warning
-WARNING - Folder structure adapted
+:::warning
+Folder structure adapted
 :::    
 - Updated to Unity 2019    
 - Updated to .Net 4.x    
