@@ -23,8 +23,10 @@ jobs:
             cd prince-14.2-linux-generic-x86_64
             yes "" | sudo ./install.sh
   
-        - name: Build PDF
+        - name: Build PDF Preferences
           run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/preferences/intro --output FinalPreferences.pdf
+        - name: Build PDF Tagger
+          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/tagger/intro --output FinalTagger.pdf
   
         - name: Upload results
           uses: actions/upload-artifact@v3
@@ -32,4 +34,11 @@ jobs:
             name: result
             # The output filename can be specified with --output option
             path: FinalPreferences.pdf
+            if-no-files-found: error
+        - name: Upload results
+          uses: actions/upload-artifact@v3
+          with:
+            name: result
+            # The output filename can be specified with --output option
+            path: FinalTagger.pdf
             if-no-files-found: error
