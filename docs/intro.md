@@ -19,7 +19,7 @@ While I strive to make the documentation clear and helpful, questions or issues 
 
 - **Discord**: Join the community on Discord to get help, share ideas, and discuss your projects with other users. This is a great place to find real-time assistance and to connect with others using the asset.
 
-- **Email Support**: If you have specific questions or need personalized help, don't hesitate to reach out via email. You can find the email address on the [[support]]
+- **Email Support**: If you have specific questions or need personalized help, don't hesitate to reach out via email. You can find the email address on the [Support](./support)
 
 ## Stay Updated
 

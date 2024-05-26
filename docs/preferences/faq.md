@@ -4,10 +4,10 @@ sidebar_label: FAQ
 ---
 # FAQ - Frequently asked questions
 
-### **Q: Full MacOS / Linux Support?**
+## **Q: Full MacOS / Linux Support?**
 
-**A:** Yes, but not for the Editor. Support for MacOS and Linux is currently limited. The Preferences Editor and the Monitor features do not function on MacOS and Linux; however, all other functionalities of Final Preferences operate as expected. Read more: [[#Limited Editor Support for Linux and MacOS]]
-### **Q: How secure is the encrypted data within a game, and what measures can enhance its security?**
+**A:** Yes, but not for the Editor. Support for MacOS and Linux is currently limited. The Preferences Editor and the Monitor features do not function on MacOS and Linux; however, all other functionalities of Final Preferences operate as expected. [Read more](#limited-editor-support-for-linux-and-macos)
+## **Q: How secure is the encrypted data within a game, and what measures can enhance its security?**
 
 **A:** The encryption system used in Final Preferences employs AES (Advanced Encryption Standard), which is a robust and commonly used encryption method. This level of encryption can effectively prevent easy or casual access to sensitive data stored within the game preferences. However, it's important to recognize that no encryption solution on the client side can guarantee 100% security.
 
