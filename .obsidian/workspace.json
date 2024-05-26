@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/tagger/changelog.md",
+                "file": "docs/tagger/getting started.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#ä",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/tagger/changelog.md",
+                "file": "docs/tagger/getting started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/tagger/changelog.md",
+                "file": "docs/tagger/getting started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/tagger/changelog.md"
+                "file": "docs/tagger/getting started.md"
               }
             }
           }
@@ -148,9 +148,22 @@
   },
   "active": "7cbe9e4f8b125a57",
   "lastOpenFiles": [
-    "docs/tagger/upgrading.md",
+    "static/img/tagger/Example2.png",
+    "docs/tagger/examples.md",
+    "docs/preferences/examples.md",
+    "docs/tagger/how it works.md",
+    "docs/tagger/groups.md",
+    "docs/tagger/getting started.md",
+    "docs/tagger/filter.md",
     "docs/tagger/changelog.md",
+    "static/img/tagger/Example5.png",
+    "static/img/tagger/Example1.png",
+    "static/img/tagger/Example3.png",
+    "static/img/tagger/Example4.png",
+    "static/img/tagger/Exmaple2.png",
+    "docs/preferences/faq.md",
     "docs/tagger/scripting.md",
+    "docs/tagger/upgrading.md",
     "node_modules/yarn/lib/v8-compile-cache.js",
     "node_modules/yarn/lib/cli.js",
     "node_modules/yarn/bin/yarn.js",
@@ -166,12 +179,9 @@
     "docs/tagger/intro.md",
     "node_modules/typescript/SECURITY.md",
     "node_modules/typescript/README.md",
-    "docs/tagger/groups.md",
-    "docs/tagger/getting started.md",
     "static/img/tagger/img1.png",
     "static/img/tagger/Singleton.png",
     "static/img/tagger/TaggerLogo.png",
-    "docs/tagger/how it works.md",
     "src/pages/markdown-page.md",
     "docs/preferences/intro.md",
     "docs/preferences/getting started.md",
@@ -180,14 +190,9 @@
     "static/img/tagger/Tagger Logo.png",
     "static/img/tagger/Tags Logo.png",
     "node_modules/css-loader/node_modules/semver/README.md",
-    "build/img/tagger/img1.png",
     "node_modules/detect-port/node_modules/ms/readme.md",
     "node_modules/detect-port/node_modules/debug/README.md",
     "node_modules/detect-port/node_modules/ms/license.md",
-    "node_modules/update-notifier/node_modules/strip-ansi/readme.md",
-    "node_modules/update-notifier/node_modules/string-width/readme.md",
-    "node_modules/wrap-ansi/node_modules/string-width/readme.md",
-    "node_modules/ajv-keywords/keywords/dotjs/README.md",
-    "node_modules/ajv/lib/dotjs/README.md"
+    "node_modules/update-notifier/node_modules/strip-ansi/readme.md"
   ]
 }

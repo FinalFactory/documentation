@@ -22,7 +22,9 @@ This streamlined approach ensures that developers can integrate Final Tagger qui
 To get started with the Tagger system and enhance your GameObject management, follow these steps:
 
 1. **Add the Final Tagger Component**
-  ![[img1.png]]
+
+    ![Img](/img/tagger/img1.png)
+  
 2. **Add Groups and Tags**: With the Tagger component active, you can now begin adding groups and tags. Click on the "+". Select the tags you want to apply to your GameObject by clicking on them. Only tags that have not yet been added will be displayed for selection. You can also create new ones.
     
 4. **Tagging in Action**: After adding the desired tags, they are now associated with your GameObject. This process is also applicable to prefabs, allowing you to manage and tag prefabs effectively.
