@@ -23,8 +23,8 @@ jobs:
             cd prince-14.2-linux-generic-x86_64
             yes "" | sudo ./install.sh
   
-        - name: Build PDF Offline Documentation
-          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/ --output FinalFactory-Offline-Documentation.pdf
+        - name: Build PDF Offline Docu
+          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/intro --output FinalFactory-Offline-Documentation.pdf
   
         - name: Upload results
           uses: actions/upload-artifact@v3
