@@ -11,6 +11,7 @@ sidebar_label: Changelog
 
 :::warning
 Folder structure changed - The Tagger Plugin is now converted to unity's new Package format.
+This means you need to DELETE the old folder. [See Upgrade Instructions](/docs/tagger/upgrading.md#project-upgrade)
 ::: 
 
 :::warning
@@ -31,9 +32,12 @@ Namespace changed - The Tagger Plugin is now migrated to Final Factory.
 - AddTag will now also accept the TaggerGroup class
 - AddTag returns now a boolean that indicates if the tag was added to the system.
 - FindGameObjectsWithTag with Search mode to search for single tags.
+- Added type-safe, auto-generated, tags to use in scripts.
+
 ## Fixed
 
 - Rare bug where the intenral array of TagArray has the wrong size after deserialization causing index out of range exception
+
 ## 1.7.1
 
 - Due to a bug caused by the Custom GameObject Inspector, I currently had to remove the Custom GameObject Inspector. Please just add the tagger script as a component as usual to every GameObject you need it and use the Component Inspector instead!    
