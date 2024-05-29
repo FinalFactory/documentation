@@ -10,33 +10,38 @@ sidebar_label: Changelog
 ### Changed
 
 :::warning
-Folder structure changed - The Tagger Plugin is now converted to unity's new Package format.
-This means you need to DELETE the old folder. [See Upgrade Instructions](/docs/tagger/upgrading.md#project-upgrade)
+Folder Structure Changed - The Tagger Plugin is now converted to Unity's new Package format. This means you need to DELETE the old folder. [See Upgrade Instructions](/docs/tagger/upgrading.md#project-upgrade)
 ::: 
 
 :::warning
-Namespace changed - The Tagger Plugin is now migrated to Final Factory.
+Namespace Changed - The Tagger Plugin is now migrated to Final Factory.
 ::: 
 
-- Complete Overhoal of the UI
-- Method for adding multiple tags renamed from AddTag to AddTags
-- Method for setting multiple tags renamed from SetTag to SetTags
-- Renamed FindGameObjectWithTag to FindGameObjectWithExactOneTag
-- Renamed FindGameObjectsWithTag to FindGameObjectsWithExactOneTag
-- Adding a non existing tag to a group will now automatically create it in the system
+### UI Overhaul
+- Complete overhaul of the UI for a more intuitive and streamlined experience.
+
+### Method Renaming
+- **Add Multiple Tags**: Method renamed from `AddTag` to `AddTags`.
+- **Set Multiple Tags**: Method renamed from `SetTag` to `SetTags`.
+- **Find GameObject with a Specific Tag**:
+  - `FindGameObjectWithTag` renamed to `FindGameObjectWithExactOneTag`.
+  - `FindGameObjectsWithTag` renamed to `FindGameObjectsWithExactOneTag`.
 
 ### Added
 
-- Enter now completes renaming a Tag
-- Groups can now configured as [Singleton](/docs/tagger/groups#singleton)
-- AddTag will now also accept the TaggerGroup class
-- AddTag returns now a boolean that indicates if the tag was added to the system.
-- FindGameObjectsWithTag with Search mode to search for single tags.
-- Added type-safe, auto-generated, tags to use in scripts.
+- **Auto-Creation of Non-Existing Tags**: Adding a non-existing tag to a group will now automatically create it in the system.
+- **Tag Renaming**: Pressing Enter now completes the renaming of a tag.
+- **Singleton Groups**: Groups can now be configured as [Singleton](/docs/tagger/groups#singleton).
+- **Enhanced AddTag Method**: 
+  - Now accepts the `TaggerGroup` class.
+  - Returns a boolean indicating if the tag was added to the system.
+- **New Search Mode**: `FindGameObjectsWithTag` now includes a search mode for single tags.
+- **Type-Safe Auto-Generated Tags**: Added type-safe, auto-generated tags for use in scripts.
+
 
 ## Fixed
 
-- Rare bug where the intenral array of TagArray has the wrong size after deserialization causing index out of range exception
+- Deserialization Bug: Fixed a rare bug where the internal array of TagArray had the wrong size after deserialization, causing an index out of range exception.
 
 ## 1.7.1
 
