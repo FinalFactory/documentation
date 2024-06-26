@@ -26,7 +26,7 @@ jobs:
         - name: Build PDF Offline Docu
           run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf
         - name: Build PDF Offline Docu
-          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.p
+          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf
   
         - name: Upload results
           uses: actions/upload-artifact@v3
