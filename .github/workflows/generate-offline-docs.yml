@@ -32,12 +32,12 @@ jobs:
         - name: Build PDF Offline Docu Tagger
           run: |
             cd docusaurus-prince-pdf
-            npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output ../FinalTagger-Offline-Documentation.pdf --category-stop
+            ./node_modules/.bin/docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output ../FinalTagger-Offline-Documentation.pdf --category-stop
     
         - name: Build PDF Offline Docu Preferences
           run: |
             cd docusaurus-prince-pdf
-            npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output ../FinalPreferences-Offline-Documentation.pdf --category-stop
+            ./node_modules/.bin/docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output ../FinalPreferences-Offline-Documentation.pdf --category-stop
   
         - name: Upload results Tagger
           uses: actions/upload-artifact@v3
