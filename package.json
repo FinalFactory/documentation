@@ -22,7 +22,8 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "yarn": "^1.22.22"
+    "yarn": "^1.22.22",
+    "docusaurus-prince-pdf": "github:FinalFactory/docusaurus-prince-pdf"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.3.2",
