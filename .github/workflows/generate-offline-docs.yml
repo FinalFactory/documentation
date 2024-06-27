@@ -22,6 +22,9 @@ jobs:
             tar zxf prince-14.2-linux-generic-x86_64.tar.gz
             cd prince-14.2-linux-generic-x86_64
             yes "" | sudo ./install.sh
+            
+        - name: Install ts-node globally
+          run: npm install -g ts-node
 
         - name: Clone forked docusaurus-prince-pdf
           run: git clone https://github.com/FinalFactory/docusaurus-prince-pdf.git
