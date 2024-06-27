@@ -23,25 +23,20 @@ jobs:
             cd prince-14.2-linux-generic-x86_64
             yes "" | sudo ./install.sh
 
-        - name: Install ts-node globally
-          run: npm install ts-node
-
         - name: Clone forked docusaurus-prince-pdf
-          run: git clone https://github.com/FinalFactory/docusaurus-prince-pdf.git
-
-        - name: Install dependencies
           run: |
+            git clone https://github.com/FinalFactory/docusaurus-prince-pdf.git
             cd docusaurus-prince-pdf
             npm install
 
         - name: Build PDF Offline Docu Tagger
           run: |
             cd docusaurus-prince-pdf
-            npx ts-node index.ts -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf --category-stop
+            npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf --category-stop
         - name: Build PDF Offline Docu Preferences
           run: |
             cd docusaurus-prince-pdf
-            npx ts-node index.ts -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf --category-stop
+            npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf --category-stop
   
         - name: Upload results Tagger
           uses: actions/upload-artifact@v3
