@@ -24,9 +24,9 @@ jobs:
             yes "" | sudo ./install.sh
   
         - name: Build PDF Offline Docu
-          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf
+          run: npx FinalFactory/docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf --exclude preferences
         - name: Build PDF Offline Docu
-          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf
+          run: npx FinalFactory/docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf --exclude tagger
   
         - name: Upload results
           uses: actions/upload-artifact@v3
