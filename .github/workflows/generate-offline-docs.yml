@@ -43,12 +43,12 @@ jobs:
           with:
             name: result
             # The output filename can be specified with --output option
-            path: FinalTagger-Offline-Documentation.pdf
+            path: Custom-docusaurus-prince-pdf/FinalTagger-Offline-Documentation.pdf
             if-no-files-found: error
         - name: Upload results Preferences
           uses: actions/upload-artifact@v3
           with:
             name: result
             # The output filename can be specified with --output option
-            path: FinalPreferences-Offline-Documentation.pdf
+            path: Custom-docusaurus-prince-pdf/FinalPreferences-Offline-Documentation.pdf
             if-no-files-found: error
