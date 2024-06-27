@@ -26,17 +26,17 @@ jobs:
         - name: Clone forked Custom-docusaurus-prince-pdf
           run: |
             git clone https://github.com/FinalFactory/Custom-docusaurus-prince-pdf.git
-            cd custom-docusaurus-prince-pdf
+            cd Custom-docusaurus-prince-pdf
             npm install -g
 
         - name: Build PDF Offline Docu Tagger
           run: |
-            cd dustom-docusaurus-prince-pdf
-            npx dustom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf --category-stop
+            cd Custom-docusaurus-prince-pdf
+            npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf --category-stop
         - name: Build PDF Offline Docu Preferences
           run:  |
-            cd dustom-docusaurus-prince-pdf
-            npx dustom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf --category-stop
+            cd Custom-docusaurus-prince-pdf
+            npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf --category-stop
   
         - name: Upload results Tagger
           uses: actions/upload-artifact@v3
