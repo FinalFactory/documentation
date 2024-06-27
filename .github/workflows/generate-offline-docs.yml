@@ -27,7 +27,7 @@ jobs:
           run: |
             git clone https://github.com/FinalFactory/Custom-docusaurus-prince-pdf.git
             cd Custom-docusaurus-prince-pdf
-            npm install -g
+            npm install
 
         - name: Build PDF Offline Docu Tagger
           run: |
