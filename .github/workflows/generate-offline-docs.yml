@@ -22,14 +22,33 @@ jobs:
             tar zxf prince-14.2-linux-generic-x86_64.tar.gz
             cd prince-14.2-linux-generic-x86_64
             yes "" | sudo ./install.sh
+
+        - name: Clone forked Custom-docusaurus-prince-pdf
+          run: |
+            git clone https://github.com/FinalFactory/Custom-docusaurus-prince-pdf.git
+            cd Custom-docusaurus-prince-pdf
+            npm install
+
+        - name: Build PDF Offline Docu Tagger
+          run: |
+            cd Custom-docusaurus-prince-pdf
+            npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
+        - name: Build PDF Offline Docu Preferences
+          run:  |
+            cd Custom-docusaurus-prince-pdf
+            npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
   
-        - name: Build PDF Offline Docu
-          run: npx docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/intro --output FinalFactory-Offline-Documentation.pdf
-  
-        - name: Upload results
+        - name: Upload results Tagger
           uses: actions/upload-artifact@v3
           with:
             name: result
             # The output filename can be specified with --output option
-            path: FinalFactory-Offline-Documentation.pdf
+            path: Custom-docusaurus-prince-pdf/FinalTagger-Offline-Documentation.pdf
+            if-no-files-found: error
+        - name: Upload results Preferences
+          uses: actions/upload-artifact@v3
+          with:
+            name: result
+            # The output filename can be specified with --output option
+            path: Custom-docusaurus-prince-pdf/FinalPreferences-Offline-Documentation.pdf
             if-no-files-found: error
