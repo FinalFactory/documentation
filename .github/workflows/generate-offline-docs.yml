@@ -37,7 +37,11 @@ jobs:
           run:  |
             cd Custom-docusaurus-prince-pdf
             npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
-  
+        - name: Build PDF Offline Docu Pool
+          run:  |
+            cd Custom-docusaurus-prince-pdf
+            npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-pool --output FinalPool-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
+      
         - name: Upload results Tagger
           uses: actions/upload-artifact@v3
           with:
@@ -51,4 +55,11 @@ jobs:
             name: result
             # The output filename can be specified with --output option
             path: Custom-docusaurus-prince-pdf/FinalPreferences-Offline-Documentation.pdf
+            if-no-files-found: error
+        - name: Upload results Pool
+          uses: actions/upload-artifact@v3
+          with:
+            name: result
+            # The output filename can be specified with --output option
+            path: Custom-docusaurus-prince-pdf/FinalPool-Offline-Documentation.pdf
             if-no-files-found: error

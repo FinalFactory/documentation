@@ -5,9 +5,6 @@ sidebar_label: Changelog
 
 # Changelog
 
-## 1.1
-- Library 'nucleus' update
-
 ## 1.0
 
 - First release
