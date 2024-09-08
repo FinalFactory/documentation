@@ -6,16 +6,16 @@ sidebar_position: 5
 
 The most convenient way to work with a pool group in **Final Pool** is by using the `Final Pool Group` component.
 
-![Final Pool Group Inspector](../../static/img/pool/Inspector.png)
+![Final Pool Group Inspector](/img/pool/Inspector.png)
 
 ## Inspector Bar
-![Inspector Bar](../../static/img/pool/FaulyGroup.png)
+![Inspector Bar](/img/pool/FaulyGroup.png)
 
 The inspector bar provides a quick overview of the pool group's basic status, including inactive / active object counts. It also displays any relevant [Warnings and Errors](#warnings-and-errors) to help you monitor the health and performance of the pool.
 
 ## Status
 
-![Pool Status](../../static/img/pool/PoolStatus.png)
+![Pool Status](/img/pool/PoolStatus.png)
 
 The status section provides a quick overview of the pool’s current state. At runtime, it displays both the number of currently **inactive** objects and **active** objects in the pool.
 
@@ -45,7 +45,7 @@ The orange marker represents the [Despawn Threshold](glossary.md#despawn-thresho
 The blue marker indicates the [Max Capacity Overflow](glossary.md#max-overflow-capacity) and is visible only if the overflow exceeds 100% of the `Max Capacity`. This provides a visual cue that the pool is operating beyond its intended capacity.
 
 ## Warnings and Errors
-![Pool Errors](../../static/img/pool/Errors.png)
+![Pool Errors](/img/pool/Errors.png)
 **Warnings and Errors** will be displayed in the **pool status** and the **title bar** to immediately indicate if there is an issue with the pool's operation. These alerts help you quickly identify and address any errors or potential problems within the pool group.
 
 ## Capacity Settings

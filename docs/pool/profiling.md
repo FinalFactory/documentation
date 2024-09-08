@@ -22,7 +22,7 @@ For more details on installing and using the Unity Profiling Core API, visit the
 
 To get started, ensure that the **Final Pool Module** is selected in the Unity Profiler.
 
-![Profiler Module](../../static/img/pool/ProfilerModule.png)
+![Profiler Module](/img/pool/ProfilerModule.png)
 
 #### Pool Profiler Module
 
@@ -33,7 +33,7 @@ The **Pool Profiler** provides historical data about pool usage, allowing you to
 
 This allows for a clear analysis of how the pool is being utilized and helps in diagnosing potential issues.
 
-![Profiler](../../static/img/pool/Profiler.png)
+![Profiler](/img/pool/Profiler.png)
 
 #### Combine with CPU Module
 
@@ -47,4 +47,4 @@ For deeper performance analysis, combine the **Pool Profiler Module** with Unity
 
 This detailed tracking helps pinpoint the source of performance issues, allowing you to optimize the pool’s behavior more effectively.
 
-![Profiler CPU](../../static/img/pool/ProfilerCPU.png)
+![Profiler CPU](/img/pool/ProfilerCPU.png)
