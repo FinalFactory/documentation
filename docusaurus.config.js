@@ -86,7 +86,7 @@ const config = {
           },
           {
             href: 'https://finalfactory.de/unity-asset-store-publisher',
-            label: 'Unity Asset Store',
+            label: 'Asset Store',
             position: 'right',
           },
         ],
