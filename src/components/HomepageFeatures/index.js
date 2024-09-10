@@ -22,6 +22,16 @@ const FeatureList = [
         Enhance Unity preference management with Final Preferences! Features multi-scope settings, real-time editor UI, encryption, and comprehensive documentation for seamless integration.
       </>
     ),
+  },
+  {
+    title: 'Final Pool',
+    Img: require('@site/static/img/Final Pool.png').default,
+    Link: '/docs/pool/intro',
+    description: (
+      <>
+        Final Pool optimizes GameObject reuse in Unity, boosting performance with customizable settings and advanced profiling tools for fine-tuned control.
+      </>
+    ),
   }
 ];
 
