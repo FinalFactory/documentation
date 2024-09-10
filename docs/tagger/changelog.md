@@ -7,6 +7,7 @@ sidebar_label: Changelog
 
 ## 2.2
 - Library 'nucleus' update
+- Fixing Bug where the PlayerLoop could get resetted
 
 ## 2.1
 - Library 'nucleus' update
