@@ -1,5 +1,5 @@
 ---
-sidebar_position: 50
+sidebar_position: 19
 sidebar_label: Glossary
 ---
 # Pool Glossary
