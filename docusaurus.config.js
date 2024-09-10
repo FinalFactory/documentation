@@ -80,6 +80,11 @@ const config = {
             to: '/docs/preferences/intro',
           },
           {
+            position: 'left',
+            label: 'Final Pool',
+            to: '/docs/pool/intro',
+          },
+          {
             href: 'https://finalfactory.de/unity-asset-store-publisher',
             label: 'Unity Asset Store',
             position: 'right',
@@ -99,6 +104,10 @@ const config = {
               {
                 label: 'Final Preferences',
                 to: '/docs/preferences/intro',
+              },
+              {
+                label: 'Final Pool',
+                to: '/docs/pool/intro',
               },
             ],
           },
@@ -125,6 +134,10 @@ const config = {
               {
                 label: 'Final Preferences',
                 href: 'https://finalfactory.de/unity-asset-preferences',
+              },
+              {
+                label: 'Final Pool',
+                href: 'https://finalfactory.de/unity-asset-pool',
               },
             ],
           },
