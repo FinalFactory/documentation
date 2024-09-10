@@ -9,7 +9,7 @@ The most convenient way to work with a pool group in **Final Pool** is by using 
 ![Final Pool Group Inspector](/img/pool/Inspector.png)
 
 ## Inspector Bar
-![Inspector Bar](/img/pool/FaulyGroup.png)
+![Inspector Bar](/img/pool/FaultyGroup.png)
 
 The inspector bar provides a quick overview of the pool group's basic status, including inactive / active object counts. It also displays any relevant [Warnings and Errors](#warnings-and-errors) to help you monitor the health and performance of the pool.
 
