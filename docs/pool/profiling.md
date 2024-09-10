@@ -1,6 +1,6 @@
 ---
 sidebar_position: 12
-sidebar_label: Glossary
+sidebar_label: Profiling
 ---
 # Pool Profiling
 
