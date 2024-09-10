@@ -33,15 +33,17 @@ jobs:
           run: |
             cd Custom-docusaurus-prince-pdf
             npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-tagger --output FinalTagger-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
+            cat ./pdf/docs.finalfactory.de-docs-category-final-tagger.txt
         - name: Build PDF Offline Docu Preferences
           run:  |
             cd Custom-docusaurus-prince-pdf
             npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-preferences --output FinalPreferences-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
+            cat ./pdf/docs.finalfactory.de-docs-category-final-preferences.txt
         - name: Build PDF Offline Docu Pool
           run:  |
             cd Custom-docusaurus-prince-pdf
             npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-pool --output FinalPool-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
-      
+            cat ./pdf/docs.finalfactory.de-docs-category-final-pool.txt      
         - name: Upload results Tagger
           uses: actions/upload-artifact@v3
           with:
