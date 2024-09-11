@@ -2,8 +2,7 @@
 sidebar_position: 5
 sidebar_label: Pool Groups
 ---
-
-### Pool Groups
+# Pool Groups
 
 The most convenient way to work with a pool group in **Final Pool** is by using the `Final Pool Group` component.
 
