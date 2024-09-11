@@ -15,6 +15,18 @@ The **Cannon Sample** provides everything you need to understand how **Final Poo
 
 ![Cannon Sample](https://static.wixstatic.com/media/880a29_fd8c70489942407cb19f0c45e0a77113~mv2.png)
 
+### How to Use
+
+After importing the sample through the Package Manager, follow these steps:
+
+1. Navigate to `Assets\Samples\Final Pool\1.0.0\Cannons\Scenes`.
+2. Open the `SampleScene`.
+3. Press **Play** and observe the initial "bad" performance in the Unity Profiler.
+4. In the **Hierarchy**, select the **Manager** GameObject.
+5. Enable the toggle in the **Sample Manager** to activate pooling.
+
+Now, the scene will use **Final Pool** to optimize object management and improve performance.
+
 ### Setup
 
 This sample includes two prefabs:
