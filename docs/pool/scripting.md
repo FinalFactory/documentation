@@ -106,6 +106,7 @@ public class PoolManagerExample : MonoBehaviour
         // Example of getting and using a pooled object
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            // Getting the Bullet. This bullet has a script attached that returns the gameobject on hit. So the return logic is not here.
             GameObject bullet = _bulletPool.Get();
             bullet.transform.position = transform.position;
             bullet.SetActive(true);
