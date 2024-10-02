@@ -29,6 +29,28 @@ If you need further help, use the various ways to [contact us](#support).
 - Time Scaling Options: Choose between scaled or unscaled time for precise control over object management during game pauses or real-time scenarios.
 - Warning and Alert System: Get notifications when pool capacities or limits are reached, allowing for proactive adjustments.
 
+## Concept: One Pool for One Object
+
+In **Final Pool**, each pooled object type has its own dedicated pool. This design ensures that every object type—whether it’s a bullet, an explosion, or a particle effect—is managed within its own pool group. This approach allows for clear differentiation between different objects, ensuring that pooling is both efficient and organized.
+
+### Why Separate Pools?
+
+Consider the case of bullets and hit effects. If you had a single pool managing both types of objects, how would you differentiate between them when spawning or despawning? By having distinct pools for each object, **Final Pool** prevents the confusion that might arise from a unified pool system. It also allows for greater flexibility in configuring each pool with its own settings, such as capacity, warmup size, or spawn/despawn thresholds.
+
+### Manual Pool Creation
+
+In **Final Pool**, pools are not automatically created for each object. Instead, you need to manually set up a pool for every object type you intend to manage. There are two ways to create pools:
+
+1. **Via the Final Pool Group Component:** You can set up pools in the Unity Editor by attaching the **Final Pool Group** component to a GameObject. This allows you to configure all the pool settings through a user-friendly interface. [Learn more](https://docs.finalfactory.de/docs/pool/groups)
+   
+2. **Via Script:** You can create pools programmatically by calling the `FinalPool.CreateGroup("NAME", Prefab, options)` method. This is particularly useful for dynamic object creation at runtime. [Learn more](https://docs.finalfactory.de/docs/pool/scripting)
+
+### Object Management in Pools
+
+Once a pool is created for an object type, you can manage object spawning and despawning through the **Final Pool Group** reference. The methods `Get()` (to spawn an object) and `Return()` (to despawn an object) are only available through this reference. You can retrieve any active pool group using `FinalPool.GetGroup("NAME")`.
+
+By providing dedicated pools for each object type, **Final Pool** ensures that your game’s performance is optimized, while maintaining a clear structure for managing object lifecycles.
+
 ## Code Documentation
 
 Every class and method is thoroughly documented using XML Documentation to ensure clarity and ease of use for developers.
