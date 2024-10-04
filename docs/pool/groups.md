@@ -50,10 +50,10 @@ The blue marker indicates the [Max Capacity Overflow](glossary.md#max-overflow-c
 
 ## Capacity Settings
 
-All capacity settings, such as `Max Capacity`, `Max Capacity Overflow`, `Total Object Count` and others, can be toggled between an **absolute count** and a **percentage** via a toggle button next to each option.
+All capacity settings, such as `Max Capacity`, `Max Capacity Overflow`, `Total Object Count` and others, can be toggled between an **absolute count**, **percentage** or **disabled** via selection buttons next to each option.
 
 :::note
-**Important:** Only one of `Max Capacity` or `Total Object Count` can be set as a percentage. One of them must be an absolute value.
+**Important:** To set one of `Max Capacity` or `Total Object Count` to percentage, the other one must be an absolute value. You can still disable both. But this means, every other capacity settings needs to be either absolute or disabled.
 :::
 
 - [**Max Capacity**](glossary.md#max-capacity): The maximum number of inactive objects the pool can store.
@@ -63,6 +63,11 @@ All capacity settings, such as `Max Capacity`, `Max Capacity Overflow`, `Total O
 - [**Warmup Count**](glossary.md#warmup-count): The number of additional objects to be created gradually after the pool is initialized.
 - [**Spawn Threshold**](glossary.md#spawn-threshold): The minimum number of inactive objects to be kept in the pool, below which new objects will be spawned.
 - [**Despawn Threshold**](glossary.md#despawn-threshold): The maximum number of inactive objects, beyond which the pool will begin despawning objects.
+
+:::note
+The UI helps you to define the options. It will warn you of most non-sense settings. For Scripting, the FinalPoolGroupOptions class have also a great collection of checks.
+But in the end, the settings must make sense. Initial Size + Warmup Count greater than Despawn Threshold? Legal, but non-sense.
+:::
 
 ## Timing Settings
 

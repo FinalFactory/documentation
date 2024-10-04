@@ -23,6 +23,7 @@ If you need further help, use the various ways to [contact us](#support).
 ## Key Features
 - Dynamic Object Pooling: Automatically manage active and inactive objects, minimizing the need for runtime instantiation.
 - Configurable Object Limits: Set absolute or percentage-based limits for maximum capacity, overflow handling, and total object count.
+- Auto Size Feature: Disable capacity restriction if you dont need them.
 - Warmup and Initialization: Preload objects to a pool to avoid delays during gameplay.
 - Controlled Spawning and Despawning: Use customizable intervals and delays for spawning and despawning objects, optimizing performance based on gameplay needs.
 - Leak Detection: Track and identify objects that are not properly returned to the pool, helping to prevent memory leaks and other performance issues.

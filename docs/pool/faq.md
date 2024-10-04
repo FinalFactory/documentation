@@ -29,3 +29,18 @@ Other persistent states, such as a **Trail Renderer**, may also cause issues whe
 Many other components may require similar resets or clearing upon reuse. When despawning a pooled object, consider any state that might persist in memory and ensure it is reset for proper functionality.
 
 Additionally, keep in mind that Unity's **Start** method is only called once, which can affect pooled objects since they are typically enabled and disabled rather than destroyed and recreated. If needed, this behavior can be adjusted by managing the object's active state differently. Refer to [Control GameObject Active State](glossary.md#control-gameobject-active-state) for more details.
+
+## **Q: How do I set a pool to auto-size via the UI?**
+
+**A:** To configure a pool for auto-sizing, disable the following three settings:
+
+- **Max Capacity**
+- **Max Capacity Overflow**
+- **Max Total Object Count**
+
+Additionally, you can also disable:
+
+- **Spawn Threshold**
+- **Despawn Threshold**
+
+By disabling these options, the pool will operate without limits, ensuring no objects are destroyed automatically. The pool will function in near-manual mode. For full manual control, you can further disable **Initial Size** and **Warmup Count**. In this mode, the pool will only create objects when requested and will never destroy any objects, offering complete control over object management.

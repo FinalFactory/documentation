@@ -19,17 +19,72 @@ To begin using **Final Pool** in your Unity project, follow these steps:
 
 ## How to Use Final Pool
 
-### Step 1: Adding the Final Pool Group Component
+### Easy Way
+
+```csharp
+
+// Set by inspector
+public GameObject Prefab;
+
+----
+
+// Obtain a pooled object. FinalPool does everything for you or creating a new one.
+var go = FinalPool.GetObject(Prefab);
+
+----
+
+// Return the object to the pool after use. FinalPool will search the right pool to return the object.
+FinalPool.ReturnObject(go);
+```
+
+### Advanced Way
+
+This is the better way in terms of performance. Use this in performance cirtical scenarios.
+
+#### Create the Pool
+
+##### Per Inspector
+
+The easier way to set up a pool.
+
+###### Step 1: Adding the Final Pool Group Component
 
 1. Select a GameObject in your scene that will persist as long as the pool is needed.
 2. Add the **Final Pool Group** component to this GameObject. This component will manage the pool during runtime.
 
-### Step 2: Setting Up the Pool
+###### Step 2: Setting Up the Pool
 
 1. Configure the pool by assigning it a name and the **prefab** you intend to pool. 
 2. (Optional) Adjust additional settings as needed to customize the pool’s behavior, such as capacity, warm-up size, and thresholds.
 
-### Step 3: Using Final Pool in Scripts
+##### Per Script
+
+If you have many pools to create, the scripting way will fit you better.
+
+```csharp
+
+// Set by inspector
+public GameObject Prefab;
+
+// Declare the pool group field
+private FinalPoolGroup _group;
+
+----
+
+public void Start()
+{
+    var options = new FinalPoolGroupOptions();
+
+    //Setting options as you like it.
+    options.MaxTotalObjectCount = PoolCount.Absolute(5000);
+
+    // Retrieve the pool group by name using the GetGroup method
+    _group = FinalPool.CreateGroup("Bullet", BulletPrefab, options);
+}
+
+```
+
+#### Step 3: Using Final Pool in Scripts
 
 Once the pool is set up, you can easily integrate it into your code:
 
@@ -37,11 +92,18 @@ Once the pool is set up, you can easily integrate it into your code:
 // Declare the pool group field
 private FinalPoolGroup _group;
 
-// Retrieve the pool group by name using the GetGroup method
-_group = FinalPool.GetGroup("Bullet");
+public void Start()
+{
+    // Retrieve the pool group by name using the GetGroup method
+    _group = FinalPool.GetGroup("Bullet");
+}
+
+----
 
 // Obtain a pooled object
 var go = _group.Get();
+
+----
 
 // Return the object to the pool after use
 _group.Return(go);

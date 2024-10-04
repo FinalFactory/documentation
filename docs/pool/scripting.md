@@ -4,6 +4,107 @@ sidebar_label: Scripting
 ---
 # Scripting
 
+## Getting and Returning Pooled Objects
+
+This section explains how to retrieve and return objects to pools managed by **Final Pool**. 
+
+### Getting a Pooled Object
+
+To retrieve a pooled object, use the `GetObject` method, which identifies the appropriate pool based on the provided prefab and returns an object from that pool. If no pool exists for the prefab, you can opt to automatically create one.
+
+#### Usage
+
+```csharp
+GameObject pooledObject = FinalPool.GetObject(prefab, true);
+```
+
+- **prefab**: The prefab used to identify the pool.
+- **createPoolGroup** (optional): If `true` (default), a new pool group is created if none exists for the prefab.
+
+#### Behavior
+
+1. **Finding the Pool**: 
+   - The method searches for a pool group that manages the given prefab. If found, an object is retrieved from the pool using `group.Get()`.
+
+2. **Creating a Pool**: 
+   - If no matching pool group is found and `createPoolGroup` is `true`, a new pool group is automatically created for the prefab, with **AutoSize** enabled. If a group with the same name exists, a number is appended to make it unique.
+   - The object is then retrieved from the new pool group.
+
+3. **No Pool Found**: 
+   - If no pool exists and `createPoolGroup` is `false`, the method logs an error and returns `null`.
+
+#### Example
+
+```csharp
+GameObject bulletPrefab = ...;
+GameObject bullet = FinalPool.GetObject(bulletPrefab);
+
+if (bullet != null)
+{
+    // Use the pooled object
+    bullet.transform.position = firePoint.position;
+    bullet.SetActive(true);
+}
+else
+{
+    Debug.LogError("Failed to retrieve a pooled object.");
+}
+```
+
+#### Performance Considerations
+
+For performance-critical scenarios, it’s better to retrieve objects directly from the pool group using the `Get()` method. This avoids the overhead of searching for the correct pool.
+
+```csharp
+// Performance-critical object retrieval
+FinalPoolGroup bulletPool = FinalPool.GetGroup("BulletPool");
+GameObject bullet = bulletPool.Get();
+```
+
+---
+
+### Returning an Object to the Pool
+
+To return an object to its pool, use the `ReturnObject` method. This method will find the correct pool group that manages the object and return it to the pool. 
+
+#### Usage
+
+```csharp
+bool success = FinalPool.ReturnObject(gameObject);
+```
+
+- **obj**: The GameObject that you want to return to the pool.
+
+#### Behavior
+
+1. **Finding the Pool**: 
+   - The method iterates through the available pool groups to find the one that manages the specified object. If found, the object is returned to the pool using `group.Return()`.
+
+2. **No Matching Pool Found**: 
+   - If the object is not managed by any pool, an error is logged, and the method returns `false`.
+
+#### Example
+
+```csharp
+GameObject bullet = ...;
+
+// Return the bullet to its pool
+if (!FinalPool.ReturnObject(bullet))
+{
+    Debug.LogError("Failed to return the object to its pool.");
+}
+```
+
+#### Performance Considerations
+
+Just like retrieving objects, returning objects directly to their specific pool group using `Return()` is more efficient for performance-critical situations.
+
+```csharp
+// Performance-critical object return
+bulletPool.Return(bullet);
+```
+
+
 ## Group Managment
 
 In **Final Pool**, pool groups can be managed entirely via scripting, allowing for dynamic creation, management, and destruction of pools at runtime. Below is a breakdown of how to create, access, and manage pool groups using the provided API.
@@ -55,19 +156,6 @@ FinalPool.DestroyGroup("BulletPool");
 ```
 
 After calling this method, the pool group and all its managed objects are permanently destroyed.
-
-### Returning an Object to the Pool
-
-The recommended approach is to return pooled objects through the pool group itself. However, if the specific pool group is unknown, you can use the `ReturnObject` method to return the object. This method iterates through all pool groups and returns the object to the appropriate group if it is managed by one.
-
-#### Example:
-```csharp
-// Return an object without knowing the group
-GameObject bullet = ...;
-FinalPool.ReturnObject(bullet);
-```
-
-If the object is not managed by any pool, an error will be logged.
 
 ### Update Loop and Pool Management
 
