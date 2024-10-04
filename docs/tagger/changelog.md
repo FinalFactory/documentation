@@ -5,6 +5,9 @@ sidebar_label: Changelog
 
 # Changelog
 
+## 2.4
+- Library 'nucleus' update
+
 ## 2.3
 - Library 'nucleus' update
 - Fixing Bug where the PlayerLoop could get reset to default
