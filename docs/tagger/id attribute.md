@@ -14,7 +14,7 @@ Decorate any serialized field within your MonoBehaviour or ScriptableObject clas
 public class MyGameObject : MonoBehaviour
 {
     [TaggerId]
-    public string gameObjectTag;
+    public int gameObjectTag;
 }
 ```
 
