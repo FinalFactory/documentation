@@ -7,6 +7,12 @@ sidebar_label: Scripting
 
 Welcome to the scripting documentation for the Tagger System, your gateway to managing and querying tags on GameObjects in Unity. This document serves as a comprehensive guide to help you leverage the TaggerSystem and related classes effectively.
 
+:::info
+
+Unity's built-in `tag` field and `CompareTag` method are intended for quick, simple tagging of GameObjects, while Final Tagger is designed for more complex scenarios where a GameObject can have multiple tags and belong to organized tag groups. Final Tagger also supports powerful querying capabilities, unlike Unity's single-tag system.
+
+:::
+
 :::danger
 **DO NOT USE METHODS OR FIELDS WITH THE 'INTERNAL' PREFIX.** These are intended for internal use and may disrupt the functionality of the system if accessed directly.
 :::
