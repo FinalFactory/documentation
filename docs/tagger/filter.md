@@ -13,25 +13,25 @@ The `TaggerFilter` class and `TaggerIdAttribute` are essential components of the
 
 ### Key Features of TaggerFilter
 
-- **Include**: Define a set of tags that a GameObject must possess to match the filter. This is used to ensure that only GameObjects with specified tags are considered during queries.
+- **Include**: Define a set of tags that a GameObject must possess to match the filter. This is used to ensure that only GameObjects with specified tags are considered during queries. SetIncludeTags will also accept the taggerId.
   
   ```csharp
-  taggerFilter.Include("Player", "Active"); // GameObject must have both 'Player' and 'Active' tags
+  taggerFilter.SetIncludeTags("Player", "Active"); // GameObject must have both 'Player' and 'Active' tags
   ```
 
-- **Exclude**: Specify tags that the GameObject must not have to pass the filter. This is useful for excluding certain GameObjects from search results based on their tags.
+- **Exclude**: Specify tags that the GameObject must not have to pass the filter. This is useful for excluding certain GameObjects from search results based on their tags. SetExcludeTags will also accept the taggerId.
   
   ```csharp
-  taggerFilter.Exclude("Enemy"); // GameObject must not have the 'Enemy' tag
+  taggerFilter.SetExcludeTags("Enemy"); // GameObject must not have the 'Enemy' tag
   ```
 
 - **Matching**: Check if a GameObject meets the criteria defined by the Include and Exclude settings. This method returns `true` if the GameObject matches all specified conditions.
   
   ```csharp
-  bool isMatch = taggerFilter.Matching(gameObject); // Returns true if gameObject matches the filter criteria
+  bool isMatch = taggerFilter.Match(gameObject); // Returns true if gameObject matches the filter criteria
   ```
   
-  If no tags are specified in the Include or Exclude lists, the `Matching` method will return `true` by default, assuming the GameObject is a match.
+  If no tags are specified in the Include or Exclude lists, the `Match` method will return `true` by default, assuming the GameObject is a match.
 
 ### Practical Applications
 

@@ -23,3 +23,17 @@ public class MyGameObject : MonoBehaviour
 - **Easy Editing**: Provides a user-friendly way to assign and modify tags directly from the Inspector without needing to dive into code.
 - **Integration**: Works seamlessly with `TaggerSystem`, allowing for easy retrieval and manipulation of tagged objects.
 - **Flexibility**: Useful for both developers and designers, as it simplifies the process of tagging and using tags within game development workflows.
+
+
+### Using the int32 id.
+
+The id is an identifier to a single tag or multiple tags. This id can be used to get the assigned Gameobjects via the following methods.
+
+```csharp
+`
+var gameObject = TaggerSystem.FindGameObjectWithTags(tagId);
+var gameObjects = TaggerSystem.FindGameObjectsWithTags(tagId);
+
+```
+
+This will return only GameObjects that exactly match the tags inside the tagId.
