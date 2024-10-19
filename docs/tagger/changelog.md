@@ -8,19 +8,20 @@ sidebar_label: Changelog
 ## 3.0
 
 :::warning
-- **BREAKING CHANGE - ! READ ! [See Upgrade Instructions](/docs/tagger/upgrading.md#taggerSearchMode)**
-::: 
-- Due a greater bug that was found in searching gameobjects, the serach behaviour of `TaggerSearchMode` has changed.
-- The search behaviour from Mode AND is now moved to Mode EXACT.
-- The search behaviour from Mode OR is now moved to Mode AND.
-- The search behaviour Mode OR does now return all gameobjects with any of the given tag. Want `Green` OR `Red`? Should return BOTH not `Green` AND `Red`.
-- Default behaviour of FindGameObject methods changed to AND instead of OR.
+**BREAKING CHANGE - PLEASE READ** - [See Upgrade Instructions](/docs/tagger/upgrading.md#taggerSearchMode)
+:::
 
-- Fixed wrong type in documenation. TaggerId requiers a int instead of an string.
-- Improved Filter documentation.
-- Readded FindGameObjectWithTag and FindGameObjectWithTags to the TaggerSystem class
-- Added FindGameObjectWithExactId and FindGameObjectsWithExactId to the TaggerSystem class
-- Added FindGameObjectWithId and FindGameObjectsWithId to the TaggerSystem class
+- Due to a major bug discovered in the search behavior, the functionality of `TaggerSearchMode` has been revised.
+  - The behavior of `Mode AND` has been moved to `Mode EXACT`.
+  - The behavior of `Mode OR` has been moved to `Mode AND`.
+  - The new `Mode OR` now returns all GameObjects that have any of the specified tags. For example, searching for `Green` OR `Red` will return objects with either `Green` or `Red` (or both), not objects that have both tags.
+  - The default behavior of the `FindGameObject` methods has changed from `OR` to `AND`.
+
+- Fixed incorrect type in documentation: `TaggerId` requires an `int` instead of a `string`.
+- Improved filter documentation.
+- Re-added `FindGameObjectWithTag` and `FindGameObjectWithTags` to the `TaggerSystem` class.
+- Added `FindGameObjectWithExactId` and `FindGameObjectsWithExactId` to the `TaggerSystem` class.
+- Added `FindGameObjectWithId` and `FindGameObjectsWithId` to the `TaggerSystem` class.
 
 ## 2.4
 - Library 'nucleus' update
