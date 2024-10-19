@@ -8,7 +8,7 @@ sidebar_label: Changelog
 ## 3.0
 
 :::warning
-**BREAKING CHANGE - PLEASE READ** - [See Upgrade Instructions](/docs/tagger/upgrading.md#taggerSearchMode)
+**BREAKING CHANGE - PLEASE READ** - [See Upgrade Instructions](/docs/tagger/upgrading.md#taggersearchmode)
 :::
 
 - Due to a major bug discovered in the search behavior, the functionality of `TaggerSearchMode` has been revised.
