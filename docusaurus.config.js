@@ -85,6 +85,11 @@ const config = {
             to: '/docs/pool/intro',
           },
           {
+            position: 'left',
+            label: 'Final Debug Draw',
+            to: '/docs/debugdraw/intro',
+          },
+          {
             href: 'https://finalfactory.de/unity-asset-store-publisher',
             label: 'Asset Store',
             position: 'right',
@@ -108,6 +113,10 @@ const config = {
               {
                 label: 'Final Pool',
                 to: '/docs/pool/intro',
+              },
+              {
+                label: 'Final Debug Draw',
+                to: '/docs/debugdraw/intro',
               },
             ],
           },
@@ -138,6 +147,10 @@ const config = {
               {
                 label: 'Final Pool',
                 href: 'https://finalfactory.de/unity-asset-pool',
+              },
+              {
+                label: 'Final Debug Draw',
+                href: 'https://finalfactory.de/unity-asset-debug-draw',
               },
             ],
           },
