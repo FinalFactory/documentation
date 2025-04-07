@@ -44,21 +44,18 @@ jobs:
         - name: Upload results Tagger
           uses: actions/upload-artifact@v4
           with:
-            name: result
-            # The output filename can be specified with --output option
+            name: result-tagger
             path: Custom-docusaurus-prince-pdf/FinalTagger-Offline-Documentation.pdf
             if-no-files-found: error
         - name: Upload results Preferences
           uses: actions/upload-artifact@v4
           with:
-            name: result
-            # The output filename can be specified with --output option
+            name: result-preferences
             path: Custom-docusaurus-prince-pdf/FinalPreferences-Offline-Documentation.pdf
             if-no-files-found: error
         - name: Upload results Pool
           uses: actions/upload-artifact@v4
           with:
-            name: result
-            # The output filename can be specified with --output option
+            name: result-pool
             path: Custom-docusaurus-prince-pdf/FinalPool-Offline-Documentation.pdf
             if-no-files-found: error
