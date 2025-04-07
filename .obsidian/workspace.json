@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1fbf210ff32664bb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7cbe9e4f8b125a57",
+  "active": "1fbf210ff32664bb",
   "lastOpenFiles": [
     "static/img/tagger/Example2.png",
     "docs/tagger/examples.md",
