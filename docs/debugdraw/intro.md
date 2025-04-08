@@ -5,7 +5,7 @@ sidebar_label: Intro
 
 # Final Debug Draw Documentation
 
-![Final Factory Logo](https://static.wixstatic.com/media/880a29_adf69d1f5217420c946012af55973e12~mv2.png)  ![Final Debug Draw Logo](https://static.wixstatic.com/media/880a29_32d6220e763b4eff8b9a74a4f0f011bb~mv2.png)
+![Final Factory Logo](https://static.wixstatic.com/media/880a29_adf69d1f5217420c946012af55973e12~mv2.png)  ![Final Debug Draw Logo](https://static.wixstatic.com/media/880a29_ee0e6fa7ef224dd992859e22a3fc22ae~mv2.png)
 
 
 
