@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 98
 sidebar_label: Asset Versioning
 ---
 
