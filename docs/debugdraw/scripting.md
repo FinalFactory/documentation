@@ -158,3 +158,78 @@ VERY IMPORTAND: You can not create a struct and use it in another frame. This wi
 ::: 
 
 If you have a long running job, it is saver to use the single draw command.
+
+## Path Drawing
+
+Final Debug Draw provides specialized structs for drawing paths with arrows. These are particularly useful for visualizing movement paths, trajectories, or flow directions.
+
+### DebugDrawPath3D
+
+The `DebugDrawPath3D` struct allows you to create and visualize 3D paths with directional arrows. It's designed for efficient path visualization with minimal memory allocation.
+
+```csharp
+// Create a path with arrows every 2 units, maximum 10 arrows
+var path = new DebugDrawPath3D(arrowDistance: 2f, arrowCount: 10);
+
+// Update the path with new positions
+path.AppendOrUpdate(new float3(x, y, z));
+
+// Draw the path
+path.Draw(
+    duration: 0f,      // How long the path stays visible
+    arrowSize: 3f,     // Size of the arrows
+    wireFrame: true,   // Whether to use wireframe or solid arrows
+    depthTest: false,  // Whether to respect depth testing
+    up: math.up()      // Up direction for arrow orientation
+);
+
+// Don't forget to dispose when done
+path.Dispose();
+```
+
+### Key Features
+
+- **Efficient Memory Usage**: Uses `NativeArray` for optimal performance
+- **Configurable Arrow Spacing**: Control how frequently arrows appear
+- **Fixed Arrow Count**: Prevents memory fragmentation
+- **Wireframe and Solid Options**: Choose between wireframe and solid arrow styles
+- **Customizable Appearance**: Control arrow size, color, and orientation
+
+### Usage Example
+
+```csharp
+// In a MonoBehaviour
+private DebugDrawPath3D _path;
+
+void Start()
+{
+    _path = new DebugDrawPath3D(2f, 10);
+}
+
+void Update()
+{
+    // Update path with current position
+    _path.AppendOrUpdate(transform.position);
+    
+    // Draw the path
+    _path.Draw(
+        color: ColorIndex.Green,
+        arrowSize: 2f,
+        duration: 0.1f
+    );
+}
+
+void OnDestroy()
+{
+    _path.Dispose();
+}
+```
+
+:::note
+A 2D version (`DebugDrawPath2D`) is also available for 2D path visualization.
+:::
+
+:::important
+Always dispose of the path struct when you're done with it to prevent memory leaks.
+:::
+

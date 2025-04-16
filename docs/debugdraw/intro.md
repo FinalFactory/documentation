@@ -9,7 +9,7 @@ sidebar_label: Intro
 
 
 
-[Final Debug Draw](https://finalfactory.de/unity-asset-debug-draw) is a Unity asset designed for efficient drawing of debug lines in various shapes from anywhere, runtime, editor, jobs, burst jobs, multithreaded. This asset allows developers to quickly debug positions, directions, paths, bounding boxes and other values via text.
+[Final Debug Draw](https://finalfactory.de/unity-asset-debugdraw) is a Unity asset designed for efficient drawing of debug lines in various shapes from anywhere, runtime, editor, jobs, burst jobs, multithreaded. This asset allows developers to quickly debug positions, directions, paths, bounding boxes and other values via text.
 
 ## Introduction
 

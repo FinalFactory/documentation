@@ -36,8 +36,9 @@ Final DebugDraw fully supports visibility **across all views**, including:
 | Feature                      | Unity Debug Draw              | Final DebugDraw               |
 |------------------------------|-------------------------------|--------------------------------|
 | Max Lines per frame (Jobs)   | ⚠️ 10,000                        | ✅ 2,000,000                      |
-| Max Text Elements per frame  | ❌ Not Supported*                 | ✅ 2,000                          |
+| Max Text Elements per frame  | ❌ Not Supported*                 | ✅ 2,000**                         |
 _*Supported via Handle API_
+_**Not a hard limit, but a recommended usage limit_
 
 Unity imposes strict limitations on the number of debug draw lines when using jobs, capping at around **10,000 lines per frame**. It also **doesn't support debug drawing of text**.
 

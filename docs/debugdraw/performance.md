@@ -49,3 +49,13 @@ The test runs inside the editor in debug mode. Only Scene View window is open an
 Final DebugDraw was performed via a job.
 
 :::
+
+
+| Feature                      | Final DebugDraw               |
+|------------------------------|--------------------------------|
+| Text (100)  | 140fps                    |
+| Text (200)  | 123fps                    |
+| Text (500)  | 111fps                    |
+| Text (1000)  | 95fps                    |
+| Text (2000)  | 58fps                    |
+| Text (3000)  | 36fps                    |
