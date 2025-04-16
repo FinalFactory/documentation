@@ -32,6 +32,16 @@ const FeatureList = [
         Final Pool optimizes GameObject reuse in Unity, boosting performance with customizable settings and advanced profiling tools for fine-tuned control.
       </>
     ),
+  },
+  {
+    title: 'Final Debug Draw',
+    Img: require('@site/static/img/Final DebugDraw.png').default,
+    Link: '/docs/debugdraw/intro',
+    description: (
+      <>
+        Final Debug Draw provides powerful visualization tools for Unity developers, enabling clear debugging with customizable shapes and texts for enhanced development workflow with jobs, burst jobs, multithreaded support.
+      </>
+    ),
   }
 ];
 
