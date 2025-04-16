@@ -2,6 +2,7 @@
 id: debugdraw-limitations
 title: Debug Draw Limitations
 sidebar_label: Limitations
+sidebar_position: 90
 ---
 
 This page highlights key limitations and differences between Unity's built-in Debug Draw functionality and the custom Final DebugDraw asset.

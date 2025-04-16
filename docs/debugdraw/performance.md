@@ -44,7 +44,7 @@ The test runs inside the editor in debug mode. Only Scene View window is open an
 | Lines (500k)  | 9fps                       | 58fps                    |
 | Lines (1M)  | --fps                       | 40fps                    |
 
-::: info
+:::info
 
 Final DebugDraw was performed via a job.
 

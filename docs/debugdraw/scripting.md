@@ -1,3 +1,8 @@
+---
+sidebar_position: 6
+sidebar_label: Scripting
+---
+
 # Scripting for DebugDraw
 
 ## Introduction
