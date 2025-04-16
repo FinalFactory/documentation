@@ -44,7 +44,7 @@ jobs:
         - name: Build PDF Offline Docu DebugDraw
           run:  |
             cd Custom-docusaurus-prince-pdf
-            npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-debugdraw --output FinalDebugDraw-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
+            npx custom-docusaurus-prince-pdf -u https://docs.finalfactory.de/docs/category/final-debug-draw --output FinalDebugDraw-Offline-Documentation.pdf --category-stop --append https://docs.finalfactory.de/docs/support
         - name: Upload results Tagger
           uses: actions/upload-artifact@v4
           with:
