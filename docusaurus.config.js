@@ -150,7 +150,7 @@ const config = {
               },
               {
                 label: 'Final Debug Draw',
-                href: 'https://finalfactory.de/unity-asset-debug-draw',
+                href: 'https://finalfactory.de/unity-asset-debugdraw',
               },
             ],
           },
