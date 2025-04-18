@@ -30,13 +30,13 @@ The debug text system requires specific TMP materials for different text types:
 
 ### Billboard Text
 For fields labeled as "billboard", use these shaders from the package:
-- `TextMeshPro/Mobile/Distance Field Billboard`
-- `TextMeshPro/Mobile/Distance Field Billboard Overlay`
+- `TextMeshPro/Mobile/Final Debug Draw/Distance Field Billboard`
+- `TextMeshPro/Mobile/Final Debug Draw/Distance Field Billboard Overlay`
 
 ### Regular Text
-For standard text fields, use these shaders from TMP:
-- `TextMeshPro/Mobile/Distance Field`
-- `TextMeshPro/Mobile/Distance Field Overlay`
+For standard text fields, use these shaders from the package:
+- `TextMeshPro/Mobile/Final Debug Draw/Distance Field`
+- `TextMeshPro/Mobile/Final Debug Draw/Distance Field Overlay`
 
 ## Configuration
 
