@@ -3,9 +3,14 @@ sidebar_position: 8
 sidebar_label: Debug Font
 ---
 
+
 # Debug Font Settings
 
 Final Debug Draw allows you to customize the font used for debug text through a settings file located in the Resources folder. The system uses TextMeshPro (TMP) for text rendering, requiring specific material configurations.
+
+:::warning HDRP and TMP Overlay Font Limitation
+Text elements using overlay font will not be visible in HDRP. This is a fundamental limitation of TMP in HDRP. See [Limitations](limitations.md) for more details.
+:::
 
 ## Location
 

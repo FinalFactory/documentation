@@ -48,6 +48,11 @@ Final DebugDraw significantly extends these limitations:
 - Up to **2 million lines per frame** when using optimized job systems.
 - Supports debug drawing of text, with a maximum of **2,000 text elements per frame**.
 
+## HDRP and TMP Overlay Font
+
+Final DebugDraw inherits the limitation from TextMeshPro (TMP) where overlay font rendering is not supported in HDRP. This means:
+- Text elements using overlay font will not be visible in HDRP
+- This is a fundamental limitation of TMP in HDRP, not specific to Final DebugDraw
 
 ## Recommendation
 
