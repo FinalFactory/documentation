@@ -5,6 +5,9 @@ sidebar_label: Changelog
 
 # Changelog
 
+## 3.1
+- Library 'nucleus' update
+
 ## 3.0
 
 :::warning

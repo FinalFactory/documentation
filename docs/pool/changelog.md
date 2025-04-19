@@ -5,6 +5,9 @@ sidebar_label: Changelog
 
 # Changelog
 
+## 1.3
+- Library 'nucleus' update
+
 ## 1.2
 - Library 'nucleus' update
 
