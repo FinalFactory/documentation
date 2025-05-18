@@ -140,6 +140,21 @@ DebugDraw.Line(new Vector3(-1, 0, 0), new Vector3(1, 0, 0), Color.white);
 - Use different colors to distinguish between various debugging elements clearly.
 - Employ directional methods (arrows, cones, rays) to visualize vectors and directions effectively.
 
+## Text Rendering
+
+DebugDraw recommends using the `com.unity.collections` package for text rendering. Due to Burst compiler and memory optimization, regular strings cannot be used. Instead, use `FixedString64Bytes`:
+
+```csharp
+// Simple usage with string (implicit conversion)
+DebugDraw.Text("Hello World", position, ColorIndex.White);
+
+// Performance critical usage (cached)
+private FixedString64Bytes _cachedText = "Hello World";
+DebugDraw.Text(_cachedText, position, ColorIndex.White);
+```
+
+If you prefer not to use the Unity package, you can safely remove it. The `FixedString64Bytes` type will be available under the `FinalFactory.Utilities` namespace instead.
+
 With DebugDraw, you can efficiently visualize your game's logic, enhancing debugging clarity and development speed.
 
 ## Draw Multiple Shapes at once.
