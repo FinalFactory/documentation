@@ -5,6 +5,9 @@ sidebar_label: Changelog
 
 # Changelog
 
+## 3.2
+- Library 'nucleus' update
+- 
 ## 3.1
 - Library 'nucleus' update
 
@@ -25,6 +28,9 @@ sidebar_label: Changelog
 - Re-added `FindGameObjectWithTag` and `FindGameObjectWithTags` to the `TaggerSystem` class.
 - Added `FindGameObjectWithExactId` and `FindGameObjectsWithExactId` to the `TaggerSystem` class.
 - Added `FindGameObjectWithId` and `FindGameObjectsWithId` to the `TaggerSystem` class.
+
+## 2.5
+- Library 'nucleus' update
 
 ## 2.4
 - Library 'nucleus' update
